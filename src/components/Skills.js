@@ -34,31 +34,38 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <h2>VISI</h2>
+                                <div className="visi">
+                                  <p>Menjadikan Perkumpulan Perempuan Wirausaha Indonesia (PERWIRA) sebagai Organisasi berbadan hukum Perempuan dalam bentuk UKM, UMKM, dan Perusahaan dengan usaha dilakukan para Wirausaha di Tingkat Nasional dan Internasional, yang akan menjadi salah satu tonggak perekokomian untuk mencapai kesejahteraan rakyat sesuai dengan filosofi Pancasila dan berlandaskan konstitusi UUD 1945.</p>
+                                </div>
+                          <h2>MISI</h2>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                            <p>PERWIRA memperdayakan dan memperkuat kaum perempuan di dalam UKM dan UMKM melalui peningkatan kemampuan anggota untuk mengelola usaha anggota, mendapatkan akses terhadap teknologi baru, pemasaran, dan pembiayaan usahanya.</p>
+                            </div>
+                          
+                            <div className="item">
+                            <p>PERWIRA memberikan advokat, pelatiham, Manajemen Sumber Daya Manusia dan jaringan kerja dan usaha untuk meningkatkan usaha anggota.</p>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                             <p>PERWIRA berkejasama dengan instansi terkait baik pemerintah maupun swasta serta luar negeri untuk mendapat peluang-peluang bisnis sehingga dapat memfasilitasi anggota-anggotanya dalam mengerjakan peluang bisnis tersebut sesuai bidangnya.</p>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                            <p>PERWIRA meningkatkan kualitas, dan kuantitas produksi anggota-anggotanya.</p>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                            <p>PERWIRA melakukan promosi, distributor dan pameran untuk memamerkan serta dapat menjual produk-produk anggotanya di dalam negeri dan perdagangan maupun luar negeri.</p>
                             </div>
+                            <div className="item">
+                            <p>PERWIRA melakukan usaha perekonomian online (digital) didalam dan luar negeri.</p>
+                            </div>
+                            
+                        
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
 }
