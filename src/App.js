@@ -1,23 +1,23 @@
-import { GlobalStyle } from "./globalStyles";
-import { lazy, Suspense } from "react";
-
-const Home = lazy(() => import("./Pages/Home"));
-const Header = lazy(() => import("./components/Header/index"));
-const Footer = lazy(() => import("./components/Footer/index"));
-const ScrollToTop = lazy(() => import("./components/ScrollToTop/index"));
+import logo from './assets/img/logo.png';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from "./components/NavBar";
+import { Banner } from "./components/Banner";
+import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <>
-      <Suspense fallback={null}>
-        <GlobalStyle />
-        {/* Hi There! */}
-        <ScrollToTop />
-        <Header />
-        <Home />
-        <Footer />
-      </Suspense>
-    </>
+    <div className="App">
+      <NavBar />
+      <Banner />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
