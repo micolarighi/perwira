@@ -1,14 +1,31 @@
 import logo from './assets/img/logo.png';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from 'react';
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import 'animate.css';
 
 function App() {
+  const [preload, setPreload] = useState(true);
+
+  setTimeout(function () {
+    setPreload(false);
+  }, 4000);
+
+  if (preload) {
+    return (
+        <div className="preload">
+          <video loop autoPlay muted>
+            <source src="intro.mp4" type="video/mp4"/>
+          </video>
+        </div>
+    )
+  }
   return (
     <div className="App">
       <NavBar />

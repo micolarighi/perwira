@@ -1,8 +1,21 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+// import projImg1 from "../assets/img/project-img1.png";
+// import projImg2 from "../assets/img/project-img2.png";
+// import projImg3 from "../assets/img/project-img3.png";
+import KetuaUmum from "../assets/img/Ketua Umum.png";
+import DewanPakar from "../assets/img/Dewan Pakar.png";
+import DewanPakar2 from "../assets/img/Dewan Pakar 2.png";
+import DewanPengawas from "../assets/img/Dewan Pengawas.png";
+import DewanPengawas2 from "../assets/img/Dewan Pengawas 2.png";
+import DewanPengawas3 from "../assets/img/Dewan Pengawas 3.png";
+import DewanPenasehat from "../assets/img/Dewan Penasehat.png";
+import DewanPenasehat2 from "../assets/img/Dewan Penasehat 2.png";
+
+
+
+
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,81 +24,103 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: `Assoc Prof.DR.Hj. Elza Syarief, SH, MH, CTLCIQnR, CCCLE, CIArbiPCLE, CPELS, CPL3S
+      C`,
+      description: "Ketua Umum",
+      imgUrl: KetuaUmum,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: `Ing.Ir.H.M.
+      Vidi Galenso Syarief, VDI, SH, MH, CMLC`,
+      description: "Dewan Pakar",
+      imgUrl: DewanPakar,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: `Fikri Gani, SH, CCPS, CTL
+      `,
+      description: "Dewan Pakar",
+      imgUrl: DewanPakar2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: `Dra. Anak Agung Putri Puspawati. MM,CTC,CTLC
+
+      `,
+      description: "Dewan Pengawas",
+      imgUrl: DewanPengawas,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: `Nurfrahyanti Fanny`,
+      description: "Dewan Pengawas",
+      imgUrl: DewanPengawas2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: `Hj. Faridah Ariyani 
+
+      `,
+      description: "Dewan Pengawas",
+      imgUrl: DewanPengawas3,
     },
+    {
+      title: `Dr.Ir.H.M.Kosasih, BE, MM,IPM`,
+      description: "Dewan Penasehat",
+      imgUrl: DewanPenasehat,
+    },
+    {
+      title: `Wardoyo Harjosarwoko S.Sos,MM`,
+      description: "Dewan Penasehat",
+      imgUrl: DewanPenasehat2,
+    },
+    
   ];
 
   return (
     <section className="project" id="project">
       <Container>
         <Row>
-          <Col size={12}>
+          <Col size={4}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <div className={isVisible ? "": ""}>
+                <h2 className="mb-5">Struktur Kepengurusan</h2>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                  <Nav variant="pills" className="nav-pills mb-5 justify content-center align-items-center" id="pills-tab" >
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Halaman 1 </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Halaman 2 </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Halaman 3 </Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
+                          {
+                            projects.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                  />
+                              )
+                            })
+                          }
+                        </Row>
+                      </Tab.Pane>
                   </Tab.Content>
+                  <Nav variant="pills" className="nav-pills mt-3 mb-5 justify content-center align-items-center" id="pills-tab" >
+                    <Nav.Item>
+                      <Nav.Link eventKey="first">Halaman 1 </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="second">Halaman 2 </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="third">Halaman 3 </Nav.Link>
+                    </Nav.Item>
+                  </Nav>
                 </Tab.Container>
               </div>}
             </TrackVisibility>

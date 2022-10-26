@@ -59,8 +59,6 @@ export const Skills = () => {
                             <div className="item">
                             <p>PERWIRA melakukan usaha perekonomian online (digital) didalam dan luar negeri.</p>
                             </div>
-                            
-                        
                         </Carousel>
                     </div>
                 </div>

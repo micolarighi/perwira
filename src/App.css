@@ -356,7 +356,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill p {
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: 400;
 }
 .skill-slider {
   margin: 0 auto;
@@ -377,7 +378,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-slider .react-multiple-carousel__arrow{
-  margin-top: 220px;
+  margin-top: 130px;
 }
 
 
@@ -396,7 +397,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     text-align: center;
   }
 }
-
 
 
 /************ Projects Css ************/
@@ -448,7 +448,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, #ff841f -5.91%, #ffd1a7 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -472,15 +472,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
+
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius: 15px;
   overflow: hidden;
   margin-bottom: 24px;
 }
+
+.proj-imgbx div {
+  min-height: 140px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start !important;
+}
+
+.proj-imgbx h6 {
+  font-size: 15px;
+}
+
+.proj-imgbx span {
+  font-size: 12px;
+}
+
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #ff9736 -5.91%, #fdb241 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -490,32 +509,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx:hover::before {
   height: 100%;
 }
-.proj-txtx {
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 100%;
-}
-.proj-imgbx:hover .proj-txtx {
-  top: 50%;
-  opacity: 1;
-}
-.proj-txtx h4 {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1.1em;
-}
-.proj-txtx span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-}
+
 .background-image-right {
   top: 20%;
   position: absolute;
@@ -675,3 +669,37 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+
+.preload {
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: slideUp;
+  animation-duration: 5s;
+  animation-delay: 2000ms;
+}
+
+
+
+
+@media (max-width: 992px) {
+  .preload video{
+    width: 100vw;
+  }
+  .preload {
+    height: 90vh;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
